@@ -1,4 +1,6 @@
-Ruby-Tutorial-1
+Ruby-Tutorial
 ===============
 
-The first turotial of the Ruby training at iStockphoto
+The first tutorial of the Ruby training at iStockphoto
+
+T1: Sandwich application
