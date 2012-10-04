@@ -29,7 +29,7 @@ class SandwichShop
                         break
                     else
                         print "You have selected #{@selection[ingredient_type].join(", ")}, is that everything? (yes/no)"
-                        continue = gets.chomp!.capitalize
+                        continue = gets.chomp!.capitalize!
                         if continue == "Yes"
                             break
                         end
