@@ -1,5 +1,5 @@
 class Article < ActiveRecord::Base
-  attr_accessible :title, :body, :tag_list
+  attr_accessible :title, :body, :tag_list, :image
 
   def tag_list
     return self.tags.join(", ")
@@ -17,7 +17,12 @@ class Article < ActiveRecord::Base
     end
   end
 
+  def image=(attrib)
+      attachments.build :image => attrib
+  end
+
   has_many :comments
   has_many :taggings
   has_many :tags, :through => :taggings
+  has_many :attachments
 end
