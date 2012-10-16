@@ -1,3 +1,6 @@
+@import "compass";
+@import "susy";
+
 body {
   background-color: #fff;
   color: #333;
@@ -64,14 +67,21 @@ div {
   }
 }
 
+.page {
+  @include container;
+}
+
 #login {
+  @include span-columns(12,12);
   background: #AAA;
 }
 
 #sidebar {
+  @include span-columns(3,12);
   background: #BBB;
 }
 
 #content {
+  @include span-columns(9 omega, 12);
   background: #CCC;
 }
