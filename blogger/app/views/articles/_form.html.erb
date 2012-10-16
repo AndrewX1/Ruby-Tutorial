@@ -4,7 +4,8 @@
       <li><%= error %></li>
     <% end %>
   </ul>
-
+  
+  <%= f.hidden_field :author_id, :value => current_user.id %>
   <p>
     <%= f.label :title %><br />
     <%= f.text_field :title %>
