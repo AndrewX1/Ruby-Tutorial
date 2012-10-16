@@ -23,10 +23,6 @@ a {
   &:visited {
     color: #666;
   }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
 }
 
 div {
@@ -66,4 +62,16 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+#login {
+  background: #AAA;
+}
+
+#sidebar {
+  background: #BBB;
+}
+
+#content {
+  background: #CCC;
 }

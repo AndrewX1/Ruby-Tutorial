@@ -9,15 +9,19 @@
   <body>
 
     <p class="flash"><%= flash[:message] %></p>
-    <%= yield %>
-    <h6>
+    <div id="login">
       <% if logged_in? %>
         <%= "Logged in as #{current_user.username}" %>
         <%= link_to '(logout)', logout_path %>
       <% else %>
         <%= link_to '(login)', login_path %>
       <% end %>
-    </h6>
-
+    </div>
+    <div id="sidebar">
+      LALALA
+    </div>
+    <div id="content">
+      <%= yield %>
+    </div>
   </body>
 </html>
