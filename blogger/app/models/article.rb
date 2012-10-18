@@ -21,6 +21,11 @@ class Article < ActiveRecord::Base
       attachments.build :image => attrib
   end
 
+  def increment_view
+    Article.increment_counter(:view_count, self.id)
+    return Article.find(self.id).view_count 
+  end
+
   has_many :comments
   has_many :taggings
   has_many :tags, :through => :taggings

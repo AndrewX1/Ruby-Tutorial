@@ -1,9 +1,12 @@
 @import "compass";
 @import "susy";
+@import "sassy-buttons";
 
 body {
-  background-color: #fff;
-  color: #333;
+  @include container;
+
+  background-color: #EEEDF5;
+  color: #666;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -22,9 +25,10 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #5A56D6;
+  text-decoration: none;
   &:visited {
-    color: #666;
+    color: #7D7ADE;
   }
 }
 
@@ -67,21 +71,114 @@ div {
   }
 }
 
-.page {
-  @include container;
+#header {
+  @include span-columns(12,12);
+  //border: 1px solid #AAA;
+  background-color: #C4BDF2;
+  border-radius: 10px;
+  margin-top: -20px;
+  padding-top: 35px;
+  position: relative;
+  z-index: 999;
+
+  #login {
+    a {
+      &.login { 
+        @include sassy-button("simple", 10px, 14px, #1FA62F);
+      }
+      &.logout {
+        @include sassy-button("simple", 10px, 14px, #D12435);
+      }
+
+      margin: 10px;
+      float: right;
+      text-decoration: none;
+    }
+
+    #welcome-message, #please-login {
+      color: white;
+      font-size: 1.5em;
+      padding-left: 15px;
+      vertical-align: middle;
+    }
+
+    margin-bottom: 20px;
+  }
 }
 
-#login {
+#flash-area {
   @include span-columns(12,12);
-  background: #AAA;
+
+  background: #FBFFD1;
+  border-radius: 10px;
+  color: #D16D78;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: -15px 0px 10px 0px;
+  padding: 20px 0px 5px 0px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
 }
 
 #sidebar {
   @include span-columns(3,12);
-  background: #BBB;
+  
+  ul#side-menu {
+    list-style-type: none;
+    padding-left: 0px;
+    
+    li {
+      background: #FFF;
+      border-radius: 5px;
+      padding: 2px;
+      margin-bottom: 10px;
+      text-align: center; 
+      
+      a {
+        text-decoration: none;
+        display: block;
+      }
+      
+      &:hover {
+        border-bottom: 10px solid #C4BDF2;
+      }
+    }
+  }
 }
 
 #content {
   @include span-columns(9 omega, 12);
-  background: #CCC;
+}
+
+div.field_with_errors label {
+  color: red;
+  font-weight: bold;
+}
+
+div.field_with_errors input {
+  border: 3px solid red;
+}
+
+input[type=submit] {
+    @include sassy-button("simple", 10px, 14px, #BBB);
+}
+
+input[type=password], input[type=text], textarea {
+  background-color:#FFF;
+  border:1px solid #dbdbdb;
+  padding:5px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  color: #000;
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  background-color: #AAA;
+  border: 0px;
+  height: 1px;
+  margin-top: 20px;
 }

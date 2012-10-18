@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'paperclip'
 #gem 'haml-rails'
 gem 'sorcery'
+gem 'by_star'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,6 +21,7 @@ group :assets do
     gem 'susy'
     gem 'compass', '>= 0.12.2'
     gem 'compass-rails','>= 1.0.3'
+    gem 'sassy-buttons'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby

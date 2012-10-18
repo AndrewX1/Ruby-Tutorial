@@ -6,13 +6,18 @@
   <br />
   <p>Tags: <%= tag_links(@article.tags) %></p>
 
+  <% if current_user.id == @article.author_id %>
+    <div id='user-options'>
+      <%= link_to 'edit', edit_article_path(@article), :class => 'edit-button' %>
+      <%= link_to 'delete', article_path(@article), :method => :delete, :confirm => "Really delete the article?", :class => 'delete-button' %>
+    </div>
+  <% end %>
+
+  <span class="view-counter">Total Views: <%= @view_count %></span>
+  <hr>
+
   <h3>Comments (<%= @article.comments.size %>)</h3>
   <%= render :partial => 'comment', :collection => @article.comments %>
-
-  <% if current_user.id == @article.author_id %>
-    <%= link_to 'delete', article_path(@article), :method => :delete, :confirm => "Really delete the article?" %>
-    <%= link_to 'edit', edit_article_path(@article) %>
-  <% end %>
 
   <%= render :partial => 'comment_form' %>
 

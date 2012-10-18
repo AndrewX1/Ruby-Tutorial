@@ -6,7 +6,8 @@ class AuthorSessionsController < ApplicationController
   def create
     author = login(params[:username], params[:password])
     if author
-      redirect_back_or_to(articles_path, :message => 'Logged in successfully.')
+      flash[:message] = "Logged in successfully."
+      redirect_to(articles_path)
     else
       flash[:message] = "Login failed."
       render :action => :new
@@ -15,6 +16,7 @@ class AuthorSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to(:authors, :message => 'Logged out!')
+    flash[:message] = "Logged out successfully."
+    redirect_to(articles_path)
   end
 end
