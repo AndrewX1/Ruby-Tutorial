@@ -26,6 +26,7 @@ class Article < ActiveRecord::Base
     return Article.find(self.id).view_count 
   end
 
+  belongs_to :author
   has_many :comments
   has_many :taggings
   has_many :tags, :through => :taggings

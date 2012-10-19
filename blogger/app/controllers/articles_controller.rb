@@ -5,10 +5,13 @@ class ArticlesController < ApplicationController
 
   def index
     # default of all articles
+    # note: not in the switch-case as a default because of the month-case's anomally
+    #       (for dummie check) and I don't want to set a default within it, keeping it DRY.
     @articles = Article.all
 
     case params[:type]
     when 'month'
+      # checking to see if the month is of numerical(1..12)
       if ((1..12).include?(params[:month].to_i))
         @articles = Article.by_month(params[:month].to_i, :field => :created_at)
         @articles_displayed = Date::MONTHNAMES[params[:month].to_i]

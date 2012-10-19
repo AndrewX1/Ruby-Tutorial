@@ -8,7 +8,7 @@ module ArticlesHelper
     link_list = '<ul>'
     tags.each do |tag|
       link = link_to tag.name, tag_path(tag)
-      delete_link = link_to '[X]', tag_path(tag), :method => :delete, :confirm => "You sure you want to delete this tag?"
+      delete_link = link_to '[X]', tag_path(tag), :method => :delete, :confirm => "You sure you want to delete [#{tag.name}] from tag list?", :class => 'delete-tag'
       link_list += '<li>' + link + ' ' + delete_link + '</li>'
     end
     link_list += '</ul>'

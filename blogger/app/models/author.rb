@@ -3,4 +3,6 @@ class Author < ActiveRecord::Base
   # attr_accessible :title, :body
 
   validates_confirmation_of :password, :message => "should match confirmation", :if => :password
+
+  has_many :articles
 end
