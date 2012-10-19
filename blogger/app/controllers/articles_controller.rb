@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
   before_filter :require_login, :only => [:new, :create, :edit, :update, :destroy]
 
+  respond_to :html, :xml
+
   def index
     # default of all articles
     @articles = Article.all

@@ -22,4 +22,6 @@
   <%= render :partial => 'comment_form' %>
 
   <%= link_to '<< Back to Articles List', articles_path %>
+<% else %>
+  You must be logged in to view this page.
 <% end %>
