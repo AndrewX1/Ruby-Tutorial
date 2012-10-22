@@ -1,4 +1,4 @@
-Ruby-Tutorial-1
+Ruby-Tutorial-333
 ===============
 
-The first tutorial of the Ruby training at iStockphoto
+The third tutorial of the Ruby training at iStockphoto; basics of Git repository.
