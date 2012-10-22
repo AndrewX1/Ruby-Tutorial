@@ -1,4 +1,7 @@
-Ruby-Tutorial-3
+This Repository contains the many Ruby Tutorials at iStockphoto
 ===============
 
-The third tutorial of the Ruby training at iStockphoto; basics of Git repository.
+Each tutorial will have its own branch:
+* T1 - Tutorial 1: Ruby
+* T2 - Tutorial 2: Rails
+* T3 - Tutorial 3: Git
