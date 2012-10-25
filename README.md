@@ -1,8 +1,8 @@
-Ruby-Tutorial-2
+Ruby-Tutorial-4
 ===============
 
-The second tutorial of the Ruby training at iStockphoto, creating an simple blog application
-using Rails and simple Gems
+The fourth tutorial of the Ruby training at iStockphoto, creating gem and using it
+in a simple application, in this case I will use the application from tutorial 2
 
 #Functionality Included
 * simple login system using Sorcery gem
@@ -11,6 +11,8 @@ using Rails and simple Gems
 * commenting on articles
 * filtering articles (on the left menu) by month or popularity
 * rss feed of the articles
+
+#Gems Used
 
 #Usage
 > rails server
