@@ -32,6 +32,14 @@ ul#article-list {
   font-weight: bold;
 }
 
+label {
+  display: block;
+}
+
+input[type="submit"] {
+  margin-top: 50px;
+}
+
 #user-options {
 
   .edit-button {

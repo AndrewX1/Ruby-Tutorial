@@ -13,6 +13,12 @@ in a simple application, in this case I will use the application from tutorial 2
 * rss feed of the articles
 
 #Gems Used
+* sass-rails
+* susy
+* compass-rails
+* sassy-buttons
+* simple_form
+* greetxu (custom-created for this tutorial)
 
 #Usage
 > rails server

@@ -13,6 +13,7 @@ gem 'paperclip'
 gem 'sorcery'
 gem 'by_star'
 gem 'greetxu'
+gem 'simple_form'
 
 # Gems used only for assets and not required
 # in production environments by default.
