@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'greetxu'
+puts Greetxu.greet(ARG[0])

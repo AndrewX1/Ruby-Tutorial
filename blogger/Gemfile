@@ -12,6 +12,7 @@ gem 'paperclip'
 #gem 'haml-rails'
 gem 'sorcery'
 gem 'by_star'
+gem 'greetxu'
 
 # Gems used only for assets and not required
 # in production environments by default.
