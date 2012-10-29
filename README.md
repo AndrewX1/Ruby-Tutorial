@@ -4,7 +4,7 @@ Ruby-Tutorial-4
 The fourth tutorial of the Ruby training at iStockphoto, creating gem and using it
 in a simple application, in this case I will use the application from tutorial 2
 
-#Functionality Included
+##Functionality Included
 * simple login system using Sorcery gem
 * ability to post articles
     * attach multiple images on the articles
@@ -12,7 +12,7 @@ in a simple application, in this case I will use the application from tutorial 2
 * filtering articles (on the left menu) by month or popularity
 * rss feed of the articles
 
-#Gems Used
+##Gems Used
 * sass-rails
 * susy
 * compass-rails
@@ -20,5 +20,5 @@ in a simple application, in this case I will use the application from tutorial 2
 * simple_form
 * greetxu (custom-created for this tutorial)
 
-#Usage
+##Usage
 > rails server
