@@ -1,8 +1,9 @@
-Ruby-Tutorial-4
+Ruby-Tutorial-5
 ===============
 
-The fourth tutorial of the Ruby training at iStockphoto, creating gem and using it
-in a simple application, in this case I will use the application from tutorial 2
+The fifth tutorial is about testing, using RSPEC and CUCUMBER.  There is a 
+separate repository with the rspec testing sample code.  In this branch, I will
+attempt to test using CUCUMBER.
 
 ##Functionality Included
 * simple login system using Sorcery gem
@@ -19,6 +20,8 @@ in a simple application, in this case I will use the application from tutorial 2
 * sassy-buttons
 * simple_form
 * greetxu (custom-created for this tutorial)
+* rspec
+* cucumber
 
 ##Usage
 > rails server
