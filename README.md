@@ -1,9 +1,7 @@
-Ruby-Tutorial-5
+Ruby-Tutorial-6
 ===============
 
-The fifth tutorial is about testing, using RSPEC and CUCUMBER.  There is a 
-separate repository with the rspec testing sample code.  In this branch, I will
-attempt to test using CUCUMBER.
+The sixth tutorial is about client side.  Here I will be creating javascript validation on the new articles form
 
 ##Functionality Included
 * simple login system using Sorcery gem
