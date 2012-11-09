@@ -11,5 +11,5 @@
   <%= f.input :tag_list %>
   <%= render :partial => 'attachment', :collection => @article.attachments %>
   <%= f.input :image, :as => :file, :label => 'Attach a New File' %>
-  <%= f.button :submit %>
+  <%= f.button :submit, :id => "submit"%> 
 <% end %>
