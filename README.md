@@ -1,7 +1,7 @@
-Ruby-Tutorial-6
+Ruby-Tutorial-7
 ===============
 
-The sixth tutorial is about client side.  Here I will be creating javascript validation on the new articles form
+The 7th tutorial is on SASS/Display.  This project has already been using SASS, Compass (for Susy Grid).
 
 ##Functionality Included
 * simple login system using Sorcery gem
